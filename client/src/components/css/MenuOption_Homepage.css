@@ -1,0 +1,32 @@
+.menu-option {
+	height: 100vh;
+	width: 100vw;
+	position: relative;
+}
+
+.menu-option .bg-img {
+	height: 100vh;
+	width: 100vw;
+	background-size: cover;
+}
+
+.menu-option .hero {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	width: 50rem;
+	text-align: center;
+}
+
+.menu-option .hero h1 {
+	font-size: 7rem;
+	text-transform: uppercase;
+	letter-spacing: -0.1rem;
+	margin-bottom: 1.2rem;
+}
+
+.menu-option .hero p {
+	font-size: 1.2rem;
+}
