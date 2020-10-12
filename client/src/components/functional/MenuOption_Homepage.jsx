@@ -1,7 +1,10 @@
 import React from 'react'
 
-import "../css/MenuOption_Homepage.css"
 import { Button } from './Button'
+
+import down from "../../assets/img/chevron-down-outline.svg"
+
+import "../css/MenuOption_Homepage.css"
 
 export const MenuOptionHomepage = (props) => {
     return (
@@ -10,8 +13,11 @@ export const MenuOptionHomepage = (props) => {
             <div className="hero">
                 <h1>{props.header}</h1>
                 <p>{props.desc}</p>
-                <Button>VIEW</Button>
+                <div style={{width: "8rem", height: "2.5rem"}}>
+                    <Button theme="transparent" >VIEW</Button>
+                </div>
             </div>
+            <img className="down" src={down} alt="down" />
         </div>
     )
 }

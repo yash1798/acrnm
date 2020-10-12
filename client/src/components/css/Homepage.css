@@ -1,0 +1,32 @@
+.slides {
+	overflow-x: hidden;
+}
+
+.slides .slick-dots {
+	position: absolute;
+	bottom: 3rem;
+	right: -0.5rem;
+}
+
+.slides .slick-arrow .slick-prev {
+	margin-left: 10rem;
+}
+
+.slides .slick-dots .slick-active {
+	filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(246deg)
+		brightness(102%) contrast(105%);
+}
+
+.slides .slick-dots li {
+	width: 0.5rem;
+}
+
+.link {
+	color: white;
+	text-decoration: none;
+	font-size: 2rem;
+}
+
+.custom-paging {
+	width: 10rem;
+}

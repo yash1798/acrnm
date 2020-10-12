@@ -1,0 +1,57 @@
+.homepage-men,
+.homepage-women,
+.homepage-kids {
+	position: relative;
+}
+
+.slides-men .slick-dots {
+	position: absolute;
+	transform: rotate(90deg);
+	width: 10rem;
+	right: 0;
+}
+
+.slides-men .slick-dots .slick-active {
+	filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(246deg)
+		brightness(102%) contrast(105%);
+}
+
+.slides-men .slick-dots li {
+	width: 0.5rem;
+}
+
+.right {
+	position: absolute;
+	z-index: 100;
+	top: 50%;
+	right: 1rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.left {
+	position: absolute;
+	z-index: 100;
+	top: 50%;
+	left: 1rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.right img,
+.left img {
+	width: 2rem;
+	filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(246deg)
+		brightness(102%) contrast(105%);
+}
+
+.right h1,
+.left h1 {
+	font-size: 1.3rem;
+	color: white;
+	font-weight: 300;
+}

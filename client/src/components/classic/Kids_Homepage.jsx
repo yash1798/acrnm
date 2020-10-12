@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import Slider from "react-slick";
 
-import top from "../../assets/img/male_zara4.jpg"
-import mid from "../../assets/img/male_zara5.jpg"
-import bottom from "../../assets/img/male_zara6.jpg"
+import top from "../../assets/img/kids_top.jpg"
+import mid from "../../assets/img/kids_mid.jpg"
+import bottom from "../../assets/img/kids_zara4.jpeg"
 
-import next from "../../assets/img/next.svg"
+import back from "../../assets/img/back.svg"
 
 
 import "../css/Category_Homepage.css"
@@ -31,7 +31,7 @@ componentDidMount(){
     })
   }
     settings = {
-      dots: true,
+      dots: false,
       infinite: false,
       speed: 1000,
       slidesToShow: 1,
@@ -51,8 +51,8 @@ componentDidMount(){
     }
     render() {
         return (
-            <div className="homepage-men">
-                <div className="right"><img src={next} alt="next"/><h1>Women</h1></div>
+            <div className="homepage-kids">
+                <div className="left"><h1>Women</h1><img src={back} alt="back"/></div>
             <Slider ref={slider => this.slider = slider} {...this.settings}>
                 <MenuOptionHomepage img={top} header="New IN" desc="Explore this week's latest menswear collection." theme="transparent" />
                 <MenuOptionHomepage img={mid} header="Collection" desc="Get the latest and best from our autumn collection." theme="transparent" />
