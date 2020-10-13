@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import Slider from "react-slick"
 
 import MenHomepage from '../classic/Men_Homepage'
@@ -10,6 +10,7 @@ import RadioOff from "../../assets/img/radio-on.svg"
 
 
 import "../css/Homepage.css"
+import Navbar from '../classic/Navbar'
 
 
 
@@ -36,11 +37,14 @@ export default class HomePage extends Component {
 }
 
         return (
+            <Fragment>
+                <Navbar />
             <Slider {...settings}>
                 <MenHomepage />
             <WomenHomepage />
             <KidsHomepage />
-      </Slider>
+                </Slider>
+                </Fragment>
         )
     }
 }

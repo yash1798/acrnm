@@ -1,0 +1,117 @@
+.navbar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	font-weight: 300;
+	color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 180vh;
+}
+.navbar .logo,
+.navbar .cart {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 20rem;
+	margin: 0.5rem 1rem;
+}
+
+.navbar .first-div {
+	display: flex;
+	flex-direction: row;
+}
+
+.navbar .cart {
+	width: 8rem;
+}
+
+.navbar .first-div .logo h1 {
+	font-size: 5rem;
+	font-weight: 700;
+	color: white;
+	font-family: "Playfair Display";
+}
+
+.navbar .first-div .navlinks {
+	position: absolute;
+	background-color: white;
+	z-index: 100;
+	width: 22rem;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	padding: 5rem 3rem;
+	display: none;
+}
+
+.navbar .first-div .navlinks h1 {
+	cursor: pointer;
+}
+
+.navbar .first-div .navlinks h1:hover,
+.navbar .first-div .navlinks .desc h3:hover {
+	border-bottom: 1px solid black;
+}
+
+.navbar .first-div .desc {
+	color: black;
+	font-weight: 700;
+	display: none;
+}
+
+.navbar .first-div .navlinks .desc h3 {
+	font-weight: 400;
+	cursor: pointer;
+}
+
+.navbar .first-div h1 {
+	font-size: 3rem;
+	color: black;
+	margin: 0.5rem 0;
+}
+
+.navbar .logo img {
+	cursor: pointer;
+}
+
+.navbar .cart h1 {
+	font-size: 1rem;
+	font-weight: 300;
+}
+
+.navbar img {
+	filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(246deg)
+		brightness(102%) contrast(105%);
+	width: 2rem;
+	cursor: pointer;
+}
+
+.navbar .first-div .visible {
+	display: block;
+	transition: all 0.5s ease-in-out;
+}
+
+.navbar .first-div .navlinks .categories {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.navbar .first-div .navlinks .categories h1 {
+	font-family: "Playfair Display";
+	font-size: 4rem;
+	margin-bottom: 4rem;
+	border-bottom: none;
+	cursor: auto;
+}
+
+.navbar .first-div .navlinks .categories img {
+	filter: invert(0%) sepia(0%) saturate(7484%) hue-rotate(313deg)
+		brightness(93%) contrast(107%);
+	width: 3rem;
+}
